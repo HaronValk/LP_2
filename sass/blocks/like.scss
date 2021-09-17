@@ -1,0 +1,26 @@
+.like__btn{
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.like__icon{
+    width: 24px;
+    height: 24px;
+    transition-property: fill;
+    transition-duration: 0.5s;
+    &:hover{
+        fill: $red;
+    }
+}
+.like__counts{
+    display: block;
+    font-size: 11px;
+    font-family: "roboto_condensedlight";
+    color: $red;
+    text-transform: uppercase;
+    line-height: 1.091;
+    @media (min-width:1500px) {
+        @include dynamicText(68%, 22, 11, 1500px, 3000, 1500)
+    }
+}
